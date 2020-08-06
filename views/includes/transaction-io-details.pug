@@ -66,7 +66,7 @@ div.row.text-monospace
 
 											if (vout.coinbaseSpend)
 												small.data-tag.bg-success.mr-2
-													span(title=`This input spends a coinbase output (mining reward).`, data-toggle="tooltip") coinbase-spend
+													span(title=`This input spends a coinbase output (staking reward).`, data-toggle="tooltip") coinbase-spend
 
 											if (vout.utxoTime)
 												- var deltaT = tx.time - vout.utxoTime

@@ -23,14 +23,6 @@ block content
 
 			hr.my-4
 
-			h6 Selection of example blocks:
-
-			- var heights = [0, 170, 100000, 210000, 420000, 481824];
-			ul.text-monospace
-				each height in heights
-					li
-						a(href=`/block-analysis/${height}`) Block ##{height.toLocaleString()}
-
 block endOfBody
 	script.
 		$(document).ready(function() {

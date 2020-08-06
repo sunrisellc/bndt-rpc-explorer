@@ -13,9 +13,9 @@ block content
 			hr
 
 			ul.mb-0
-				li Mining difficulty adjusts automatically every #{coinConfig.difficultyAdjustmentBlockCount.toLocaleString()} blocks.
-				li The adjustment aims to maintain an average block-mining time of #{coinConfig.targetBlockTimeMinutes} minutes.
-				li A growth in the difficulty indicates that the average block-mining time during the previous adjustment epoch was less than #{coinConfig.targetBlockTimeMinutes} minutes (due to more miners joining the network and searching for blocks).
+				li Staking difficulty adjusts automatically every #{coinConfig.difficultyAdjustmentBlockCount.toLocaleString()} blocks.
+				li The adjustment aims to maintain an average block-staking time of #{coinConfig.targetBlockTimeMinutes} minutes.
+				li A growth in the difficulty indicates that the average block-staking time during the previous adjustment epoch was less than #{coinConfig.targetBlockTimeMinutes} minutes (due to more miners joining the network and searching for blocks).
 				li A drop in difficulty indicates miners have left the network so finding each block is adjusted to be easier for the smaller number remaining.
 				li The numeric Difficulty is a multiple of the difficulty of finding the easiest block (Block #0) - e.g. blocks in LTCP mainnet epoch 308 are over 16 trillion times harder to mine than those in epoch 0. 
 
