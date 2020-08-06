@@ -53,16 +53,16 @@ module.exports = {
 	name:"Bitcoin",
 	ticker:"LTCP",
 	logoUrlsByNetwork:{
-		"main":"/img/logo/btc.svg",
-		"test":"/img/logo/tbtc.svg",
-		"regtest":"/img/logo/tbtc.svg"
+		"main":"/img/logo/ltcp.svg",
+		"test":"/img/logo/ltcp.svg",
+		"regtest":"/img/logo/ltcp.svg"
 	},
 	siteTitlesByNetwork: {
 		"main":"Litecoin-PoS Explorer",
 		"test":"Testnet Explorer",
 		"regtest":"Regtest Explorer"
 	},
-	siteDescriptionHtml:"<b>LTCP Explorer</b> is <a href='https://github.com/janoside/btc-rpc-explorer). If you run your own [Litecoin-PoS Full Node](https://bitcoin.org/en/full-node), **LTCP Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/janoside/btc-rpc-explorer) for a list of features and instructions for running.",
+	siteDescriptionHtml:"<b>LTCP Explorer</b>. **LTCP Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/janoside/btc-rpc-explorer) for a list of features and instructions for running.",
 	nodeTitle:"Litecoin-PoS Full Node",
 	nodeUrl:"https://bitcoin.org/en/full-node",
 	demoSiteUrl: "https://explorer.btc21.org",
