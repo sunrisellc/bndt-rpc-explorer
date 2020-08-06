@@ -20,9 +20,6 @@ div.table-responsive
 				if (blockstatsByHeight)
 					th.data-header.text-right
 						span.border-dotted(title="The total output of all transactions in each block.", data-toggle="tooltip") Volume
-
-				th.data-header.text-right
-					span.border-dotted(title="The average fee (sat/vB) for all block transactions.", data-toggle="tooltip") Avg Fee
 				th.data-header.text-right Σ Fees
 				
 				//th.data-header.text-right Size (kB)
@@ -122,15 +119,7 @@ div.table-responsive
 								else
 									span 0
 
-						td.data-cell.text-monospace.text-right
-							- var currencyValue = new Decimal(block.totalFees).dividedBy(block.strippedsize).times(coinConfig.baseCurrencyUnit.multiplier).toDecimalPlaces(1);
-							span #{currencyValue}
-							
-							// idea: show typical tx fee, maybe also optimized fee if not segwit
-							if (false)
-								- var feeEstimateVal = currencyValue.times(166).dividedBy(coinConfig.baseCurrencyUnit.multiplier);
-								span.border-dotted(title=`Value: ${feeEstimateVal}`, data-toggle="tooltip") #{currencyValue}
-
+						
 						td.data-cell.text-monospace.text-right
 							- var currencyValue = new Decimal(block.totalFees);
 							- var currencyValueDecimals = 3;
