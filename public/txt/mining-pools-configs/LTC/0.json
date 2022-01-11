@@ -1,0 +1,14 @@
+{
+  "coinbase_tags": {
+    "BanditoPool": {
+      "name": "BanditoPool",
+      "link": "https://pool.banditocoin.com"
+    }
+  },
+  "payout_addresses": {
+    "BSwxqTiG9R1jsz1r3VAMHRu8Vxm28Q2kyV": {
+      "name": "Bitfarms",
+      "link": "https://pool.banditocoin.com"
+    }
+  }
+}
