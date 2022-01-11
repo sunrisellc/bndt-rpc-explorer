@@ -104,7 +104,7 @@ div.table-responsive
 							if (block.miner && block.miner.name)
 								small.rounded.bg-primary.text-white.px-2.py-1(data-toggle="tooltip", title=("Identified by: " + block.miner.identifiedBy)) #{utils.ellipsize(block.miner.name, 10)}
 							else
-								span.badge.badge-primary Stake
+								span.badge.badge-primary Unknown
 
 						
 						td.data-cell.text-monospace.text-right #{block.tx.length.toLocaleString()}

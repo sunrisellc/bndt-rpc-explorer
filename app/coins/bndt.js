@@ -50,22 +50,22 @@ var currencyUnits = [
 ];
 
 module.exports = {
-	name:"Bitcoin",
+	name:"Ƀandito",
 	ticker:"BNDT",
 	logoUrlsByNetwork:{
-		"main":"/img/logo/ltcp.svg",
+		"main":"/img/logo/bndt.png",
 		"test":"/img/logo/ltcp.svg",
 		"regtest":"/img/logo/ltcp.svg"
 	},
 	siteTitlesByNetwork: {
-		"main":"Bandito-PoS Explorer",
+		"main":"Ƀandito Explorer",
 		"test":"Testnet Explorer",
 		"regtest":"Regtest Explorer"
 	},
-	siteDescriptionHtml:"<b>BNDT Explorer</b>",
-	nodeTitle:"Bandito Full Node",
-	nodeUrl:"https://bitcoin.org/en/full-node",
-	demoSiteUrl: "https://explorer.btc21.org",
+	siteDescriptionHtml:"<b>Ƀandito Explorer</b>",
+	nodeTitle:"Ƀandito Full Node",
+	nodeUrl:"https://www.banditocoin.com/en/full-node",
+	demoSiteUrl: "https://www.banditocoin.com",
 	miningPoolsConfigUrls:[
 		"public/txt/mining-pools-configs/BNDT/0.json",
 	],
@@ -96,16 +96,16 @@ module.exports = {
 	},
 	genesisCoinbaseTransactionsByNetwork:{
 		"main": {
-			"hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff0804ffff001d02fd04ffffffff0100f2052a01000000434104f5eeb2b10c944c6b9fbcfff94c35bdeecd93df977882babc7f3a2cf7f5c81d3b09a68db7f0e04f21de5d4230e75e6dbe7ad16eefe0d4325a62067dc6f369446aac00000000",
-			"txid": "3350346a2a7dafd343880436d8421a5cdb535b3d1b1536ba38ca369b38e4ed6f",
-			"hash": "33406bedc8476b240c9623ec71611130ee87251e68b7c7acefe5246e381fa758",
+			"hex": "02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff03510104ffffffff0200f2052a010000001976a91410131962733da5e9a59e99b1dc9a6ae1826d2b8d88ac0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000",
+			"txid": "ca8a8d1a959b1fd602aee96bb33c199588353af16c0ee09e545ee86c4cd0bad0",
+			"hash": "1e092b89ebacb21281ec61b09268d71a89231016e2bb28819d5fd7509a8e3089",
 			"size": 290,
 			"vsize": 290,
 			"version": 1,
-			"confirmations":475000,
+			"confirmations":4913,
 			"vin": [
 				{
-					"coinbase": "04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73",
+					"coinbase": "510104",
 					"sequence": 4294967295
 				}
 			],
@@ -114,19 +114,19 @@ module.exports = {
 					"value": 50,
 					"n": 0,
 					"scriptPubKey": {
-						"asm": "04f5eeb2b10c944c6b9fbcfff94c35bdeecd93df977882babc7f3a2cf7f5c81d3b09a68db7f0e04f21de5d4230e75e6dbe7ad16eefe0d4325a62067dc6f369446a OP_CHECKSIG",
-						"hex": "4104f5eeb2b10c944c6b9fbcfff94c35bdeecd93df977882babc7f3a2cf7f5c81d3b09a68db7f0e04f21de5d4230e75e6dbe7ad16eefe0d4325a62067dc6f369446aac",
+						"asm": "OP_DUP OP_HASH160 10131962733da5e9a59e99b1dc9a6ae1826d2b8d OP_EQUALVERIFY OP_CHECKSIG",
+						"hex": "76a91410131962733da5e9a59e99b1dc9a6ae1826d2b8d88ac",
 						"reqSigs": 1,
-						"type": "pubkey",
+						"type": "pubkeyhash",
 						"addresses": [
-							"1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa"
+							"B5v5JpNcFDDTsCqgLd9P2SwNBmpgYn66nn"
 						]
 					}
 				}
 			],
 			"blockhash": "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
-			"time": 1230988505,
-			"blocktime": 1230988505
+			"time": 1641575177,
+			"blocktime": 1641575177
 		},
 		"test": {
 			"hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff4d04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73ffffffff0100f2052a01000000434104678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5fac00000000",
@@ -273,13 +273,13 @@ module.exports = {
 	historicalData: [
 		{
 			type: "blockheight",
-			date: "2009-01-03",
+			date: "2022-07-01",
 			chain: "main",
 			blockHeight: 0,
-			blockHash: "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
-			summary: "The Bandito-PoS Genesis Block.",
-			alertBodyHtml: "This is the first block in the Bandito-PoS blockchain, known as the 'Genesis Block'. This block was mined by Bandito-PoS's creator Satoshi Nakamoto. You can read more about <a href='https://en.bitcoin.it/wiki/Genesis_block'>the genesis block</a>.",
-			referenceUrl: "https://en.bitcoin.it/wiki/Genesis_block"
+			blockHash: "32406bedc8476b240c9623ec71611130ee87251e68b7c7acefe5246e381fa758",
+			summary: "The Ƀandito Genesis Block.",
+			alertBodyHtml: "This is the first block in the Ƀandito blockchain, known as the 'Genesis Block'. This block was mined by Ƀandito creator Ghyphted when creating the blockchain.",
+			referenceUrl: "https://en.banditocoin.com/wiki/Genesis_block"
 		},
 		{
 			type: "tx",

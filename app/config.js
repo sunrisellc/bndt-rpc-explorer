@@ -178,7 +178,7 @@ module.exports = {
 				{
 					title:"Related Sites",
 					links:[
-						{name: "Bandito Coin Website", url:"https://www.banditocoin.com", imgUrl:"/img/logo/ltcp.svg"}
+						{name: "Bandito Coin Website", url:"https://www.banditocoin.com", imgUrl:"/img/logo/bndt.png"}
 					]
 				}
 			]
